@@ -2,6 +2,7 @@ package com.movieApp.MovieAPI.controller;
 
 import com.movieApp.MovieAPI.document.Movie;
 import com.movieApp.MovieAPI.repository.MovieRepository;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,7 @@ public class MovieResource {
     @Autowired
     MovieRepository movieRepository;
 
+    @Operation(description = "Adds Movie to Database")
     @PostMapping("/AddMovie")
     public ResponseEntity<Movie> createMovie(@RequestBody Movie movie) {
         try {
@@ -33,27 +35,30 @@ public class MovieResource {
         }
     }
 
+    @Operation(description = "List of All Movies")
     @GetMapping("/getAll")
     public List<Movie> getMovies(){
         return movieRepository.findAll();
     }
 
-    @GetMapping("/{val}")
-    public ResponseEntity<Movie> findById(@PathVariable("val") String id){
+    @Operation(description = "Finds a Movie by ID")
+    @GetMapping("/{id}")
+    public ResponseEntity<Movie> findById(@PathVariable("id") String id){
         try{
             Optional<Movie> movie = movieRepository.findById(id);
             if(movie.isPresent()) {
                 Movie _movie = movie.get();
-                return new ResponseEntity<>(_movie, HttpStatus.FOUND);
+                return new ResponseEntity<>(_movie, HttpStatus.OK);
             }
             else{
-                return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+                return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
             }
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
+    @Operation(description = "Modify the Movie")
     @PostMapping("/modifyMovie")
     public ResponseEntity<Movie> modifyMovie(@RequestBody Movie movie){
         try {
@@ -67,6 +72,8 @@ public class MovieResource {
         }
     }
 
+
+    @Operation(description = "Deletes All Movies")
     @DeleteMapping("/delete")
     public ResponseEntity<HttpStatus> deleteAll(){
         try {
@@ -77,6 +84,8 @@ public class MovieResource {
         }
     }
 
+
+    @Operation(description = "Deletes the list by ID")
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<HttpStatus> deleteTutorial(@PathVariable("id") String id) {
         try {
