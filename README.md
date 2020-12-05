@@ -10,7 +10,7 @@ How to run this project?
 3. Run the Project in the IDE of your choice.
 
 
-Open API v3.0.1 spec
-Check out __Api-Docs.yaml__ for more info.
+Open API v3.0.1 spec  
+Check out __Api-Docs.yaml__ for more info.  
 
 
