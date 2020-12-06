@@ -10,7 +10,8 @@ How to run this project?
 3. Run the Project in the IDE of your choice.
 
 
-Open API v3.0.1 spec  
-Check out __Api-Docs.yaml__ for more info.  
+### Open API v3.0.1 spec   
+Documented using __Swagger__   
+Check out [__Api-Docs.yaml__](https://github.com/yash-k9/spring-boot-mongodb-movieAPI/blob/main/api-docs.yaml) for more info.  
 
 
