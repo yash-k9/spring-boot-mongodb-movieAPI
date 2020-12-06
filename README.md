@@ -8,8 +8,8 @@ Movie Info API using Spring Data MongoDB and REST
 * Runs on Port 8090
 * Visit `localhost:8090/swagger-ui.html` for API Docs
 
-How to run this project?
-========================
+<!-- -->
+### How to run this project?
 1. Install and setup MongoDB.
 2. Populate data in DB.
 2. Download the [Movie API JAR FIle](https://github.com/yash-k9/spring-boot-mongodb-movieAPI/blob/main/MovieAPI/target/MovieAPI-0.0.1-SNAPSHOT.jar).
