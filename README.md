@@ -12,7 +12,7 @@ Movie Info API using Spring Data MongoDB and REST
 ### How to run this project?
 1. Install and setup MongoDB.
 2. Populate data in DB.
-2. Download the [Movie API JAR FIle](https://github.com/yash-k9/spring-boot-mongodb-movieAPI/blob/main/MovieAPI/target/MovieAPI-0.0.1-SNAPSHOT.jar).
+2. Download the [Movie API JAR File](https://github.com/yash-k9/spring-boot-mongodb-movieAPI/blob/main/MovieAPI/target/MovieAPI-0.0.1-SNAPSHOT.jar).
 3. Run using `java -jar MovieAPI-0.0.1-SNAPSHOT.jar` command.
 
 
