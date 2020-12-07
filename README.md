@@ -6,6 +6,7 @@ Movie Info API using Spring Data MongoDB and REST
 <!-- About the Project -->
 ### About the Project
 * Runs on Port 8090
+* [Movie POJO](https://github.com/yash-k9/spring-boot-mongodb-movieAPI/blob/main/MovieAPI/src/main/java/com/movieApp/MovieAPI/document/Movie.java)    
 * Visit `localhost:8090/swagger-ui.html` for API Docs
 
 <!-- -->
@@ -19,6 +20,10 @@ Movie Info API using Spring Data MongoDB and REST
 ### Open API v3.0.1 spec   
 Documented using __Swagger__.   
 Check out [__Api-Docs.yaml__](https://github.com/yash-k9/spring-boot-mongodb-movieAPI/blob/main/api-docs.yaml) for more info.  
+
+### Document Example
+<img src="https://github.com/yash-k9/spring-boot-mongodb-movieAPI/blob/main/images/MovieJSON.png" width="700"> &ensp; 
+
 
 
  
