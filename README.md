@@ -24,6 +24,9 @@ Check out [__Api-Docs.yaml__](https://github.com/yash-k9/spring-boot-mongodb-mov
 ### Document Example
 <img src="https://github.com/yash-k9/spring-boot-mongodb-movieAPI/blob/main/images/MovieJSON.png" width="700"> &ensp; 
 
+### API Info
+<img src="https://github.com/yash-k9/spring-boot-mongodb-movieAPI/blob/main/images/ApiInfo.png" width="1000"> &ensp; 
+
 
 
  
